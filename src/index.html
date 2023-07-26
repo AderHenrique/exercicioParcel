@@ -3,11 +3,107 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Aniverasrio do Ader</title>
+   <title>Aniversário do Ader</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles/main.scss">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-   <img src="./images/background.jpg" alt="background">
+   <header class="hero">
+      <div class="container">
+         <p class="hero__title">
+            Você amigo do Ader, confirme sua presença colocando seu nome na lista!
+         </p>
+         <p class="hero__text">
+            O maior aniversário medieval do Brasil começa em: 
+            <br>
+            <span id="contador"></span>
+         </p>
+         <div class="infos-bar">
+            <ul class="infos-bar__infos">
+               <li class="infos-bar__infos__item">
+                  <b>Localização</b>
+                  Castelo de Itaipava - Petrópolis - RJ
+               </li>
+               <li class="infos-bar__infos__item">
+                  <b>Data</b>
+                  27/11/2023 às 20hrs
+               </li>
+            </ul>
+            <a class="button" href="#">Coloque seu nome na lista</a>
+         </div>
+      </div>
+   </header>
+   <section class="event event--place event--image-left">
+         <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+               <h2 class="event__detail__title">Local</h2>
+               <p class="event__detail__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt praesentium voluptas explicabo ducimus quidem neque, ea error rerum odit quae officiis, voluptatum blanditiis cumque et? Harum et maxime voluptatum.
+               </p>
+            </div>
+            <img class="event__image" src="./images/place.jpg" alt="Local">
+      </div>
+   </section>
+   <section class="event event--interior">
+      <div class="container" data-aos="fade-right">
+         <div class="event__detail">
+            <h2 class="event__detail__title">Espaço interno</h2>
+            <p class="event__detail__description">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt praesentium voluptas explicabo ducimus quidem neque, ea error rerum odit quae officiis, voluptatum blanditiis cumque et? Harum et maxime voluptatum.
+            </p>
+         </div>
+         <img class="event__image" src="./images/interiorSpace.jpg" alt="espaço interno">
+      </div>
+   </section>
+   <section class="event event--activities event--image-left">
+      <div class="container" data-aos="fade-left">
+         <div class="event__detail">
+            <h2 class="event__detail__title">Atividades</h2>
+            <p class="event__detail__description">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt praesentium voluptas explicabo ducimus quidem neque, ea error rerum odit quae officiis, voluptatum blanditiis cumque et? Harum et maxime voluptatum.
+            </p>
+         </div>
+         <img class="event__image" src="./images/activities.webp" alt="Atividades">
+      </div>
+   </section>
+   <section class="event event--food">
+      <div class="container" data-aos="fade-right">
+         <div class="event__detail">
+            <h2 class="event__detail__title">Comidas</h2>
+            <p class="event__detail__description">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt praesentium voluptas explicabo ducimus quidem neque, ea error rerum odit quae officiis, voluptatum blanditiis cumque et? Harum et maxime voluptatum.
+            </p>
+         </div>
+         <img class="event__image" src="./images/food.jpg" alt="Comidas">
+      </div>
+   </section>
+   <section class="event event--drinks event--image-left">
+      <div class="container" data-aos="fade-left">
+         <div class="event__detail">
+            <h2 class="event__detail__title">Bebidas</h2>
+            <p class="event__detail__description">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt praesentium voluptas explicabo ducimus quidem neque, ea error rerum odit quae officiis, voluptatum blanditiis cumque et? Harum et maxime voluptatum.
+            </p>
+         </div>
+         <img class="event__image" src="./images/drinks.jpg" alt="bebidas">
+      </div>
+   </section>
+   <section class="event event--rules">
+      <div class="container" data-aos="fade-right">
+         <div class="event__detail">
+            <h2 class="event__detail__title">Regras</h2>
+            <p class="event__detail__description">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt praesentium voluptas explicabo ducimus quidem neque, ea error rerum odit quae officiis, voluptatum blanditiis cumque et? Harum et maxime voluptatum.
+            </p>
+         </div>
+         <img class="event__image" src="./images/rules.jpg" alt="Regras">
+      </div>
+   </section>
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script src="scripts/main.js"></script>
 </body>
 </html>

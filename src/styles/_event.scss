@@ -1,0 +1,63 @@
+.event {
+   padding: 80px 0;
+   background-color: black;
+
+   &--place{
+      background-image: linear-gradient(#102770, #003780);
+   }
+   &--interior{
+      background-image: linear-gradient( #003780 ,#004790);
+   }
+   &--activities{
+      background-image: linear-gradient( #004790 ,#4e046d);
+   }
+   &--food{
+      background-image: linear-gradient( #4e046d ,#3e005d);
+   }
+   &--drinks{
+      background-image: linear-gradient( #3e005d ,#1e003d);
+   }
+   &--rules{
+      background-image: linear-gradient( #1e003d ,#2c3a49);
+   }
+
+   &--image-left{
+      .container{
+         flex-direction: row-reverse;
+      }
+   }
+
+   .container {
+      display: flex;
+      gap: 40px;
+
+   }
+   &__detail{
+      &__title{
+         font-size: 18px;
+         margin-bottom: 16px;
+      }
+      &__description{
+         font-size: 16px;
+         line-height: 22px;
+         margin-bottom: 16px;
+      }
+   }
+   &__image{
+      width: 360px;
+      height: 330px;
+   }
+
+   @media(max-width: 640px){
+      .container{
+         display: block;
+      }
+
+      &__image{
+      width: 100%;
+      height: 330px;
+      }
+   }
+   
+   
+}
